@@ -1,0 +1,38 @@
+form {
+    background-color: $background-color_section;
+}
+
+.form_recherche {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 51px;
+    box-shadow: inset 1px 3px 0px #e5dfdf;
+    background-color: $background-color_recherche;
+    &_position {
+        margin: 13px 0 15px 102px;
+    }
+}
+
+input {
+    border: none;
+    background-color: $background-color_recherche;
+    font-weight: bold;
+    margin: 13px 15px 15px 0;
+}
+
+.form_corps {
+    text-align: center;
+    height: 287px;
+    &_p {
+        margin: 0 28px 33px 39px;
+    }
+}
+
+h1 {
+    font-weight: bold;
+    padding: 43px 78px 21px 63px;
+    font-size: 22px;
+    margin: 0;
+}
+
