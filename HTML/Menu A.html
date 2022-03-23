@@ -3,19 +3,20 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="./CSS/normalize.css">
-        <link rel="stylesheet" type="text/css" href="./CSS/style.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/normalize.css">
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/d558b1356d.js" crossorigin="anonymous"></script>
-        <title>Menu à la Française</title>
+        <title>Projet Ohmyfood</title>
     </head>
     <body>
         <div id="bloc-page">
             <header>
-                <i class="fas fa-arrow-left"></i>
-                <img src="/Images/ohmyfood.png" alt="Logo noir de OhmyFood"/>
+                <a href="../index.html"><i class="fas fa-arrow-left"></i></a>
+                <img class="logo_menu" src="../Images/ohmyfood.png" alt="Logo noir de OhmyFood"/>
             </header>
             <main>
-                <img src="/Images/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="image à la française"/>
+                <img src="../Images/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="image à la française"/>
                 <div>
                     <h1>A la Française</h1>
                     <i class="far fa-heart"></i>
@@ -107,13 +108,21 @@
                 <button>Commander</button>
             </main>
             <footer>
-                <img src="/Images/ohmyfood.png" alt="Logo blanc de OhmyFood"/>
-                <i class="fas fa-utensils"></i>
-                <p>Proposer un restaurant</p>
-                <i class="fas fa-hands-helping"></i>
-                <p>Devenir partenaire</p>
-                <p>Mentions légales</p>
-                <p>Contact</p>
+                <nav>
+                    <h4>ohmyfood</h4>
+                    <ul>
+                        <div class="lien_1">
+                            <i class="fas fa-utensils"></i>
+                            <li><a href="#">Proposer un restaurant</a></li>
+                        </div>
+                        <div class="lien_2">    
+                            <i class="fas fa-hands-helping"></i>
+                            <li><a href="#">Devenir propriétaire</a></li>
+                        </div>    
+                        <li><a href="#">Mentions légales</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
             </footer>
         </div>
     </body>

@@ -212,4 +212,19 @@ figure figcaption .coeur_plein {
   display: none;
 }
 
+header {
+  display: flex;
+  align-items: center;
+  height: 62px;
+}
+header i {
+  margin: 30px 66px 30px 28px;
+}
+
+.logo_menu {
+  width: 170px;
+  height: 30px;
+  margin: 0;
+}
+
 /*# sourceMappingURL=style.css.map */
