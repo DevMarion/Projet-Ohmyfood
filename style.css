@@ -12,6 +12,11 @@ h1, h2, h3, h4, button {
   font-weight: bold;
 }
 
+a {
+  color: initial;
+  text-decoration: none;
+}
+
 .form_corps button {
   background: linear-gradient(169deg, #FF79DA, #9356DC);
   color: white;
@@ -61,6 +66,46 @@ h1 {
   padding: 43px 78px 21px 63px;
   font-size: 22px;
   margin: 0;
+}
+
+footer {
+  height: 200px;
+  background-color: #353535;
+  color: white;
+  padding: 25px 0 40px 25px;
+  line-height: 28px;
+}
+footer h4 {
+  font-family: "Shrikhand", sans-serif;
+  padding: 0 0 6px 0;
+}
+
+ul {
+  padding: 0;
+}
+ul div {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+ul div i {
+  font-size: 10px;
+}
+
+.lien_1 {
+  padding: 0 163px 0 0;
+}
+
+.lien_2 {
+  padding: 0 188px 0 0;
+}
+
+li {
+  list-style-type: none;
+}
+li a {
+  color: white;
 }
 
 .fonctionnement {
