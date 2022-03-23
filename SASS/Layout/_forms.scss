@@ -10,13 +10,12 @@ form {
     &_position {
         margin: 13px 0 15px 102px;
     }
-}
-
-input {
-    border: none;
-    background-color: $background-color_plusfonce;
-    font-weight: bold;
-    margin: 13px 15px 15px 0;
+    & input {
+        border: none;
+        background-color: $background-color_plusfonce;
+        font-weight: bold;
+        margin: 13px 15px 15px 0;
+    }
 }
 
 .form_corps {

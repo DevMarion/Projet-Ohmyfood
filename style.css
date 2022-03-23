@@ -7,7 +7,7 @@
   margin: 0;
 }
 
-button {
+.form_corps button {
   background: linear-gradient(169deg, #FF79DA, #9356DC);
   font-weight: bold;
   color: white;
@@ -38,8 +38,7 @@ form {
 .form_recherche_position {
   margin: 13px 0 15px 102px;
 }
-
-input {
+.form_recherche input {
   border: none;
   background-color: #eaeaea;
   font-weight: bold;
@@ -84,8 +83,16 @@ h1 {
   margin: 0 0 21px 0;
   box-shadow: 2px 3px 20px #dfdfdf;
 }
-.fonctionnement_choix_p {
-  margin: 0px 72px 0px 22px;
+.fonctionnement_choix_p1 {
+  margin: 0px 70px 0px 25px;
+  font-weight: bold;
+}
+.fonctionnement_choix_p2 {
+  margin: 0px 86px 0px 22px;
+  font-weight: bold;
+}
+.fonctionnement_choix_p3 {
+  margin: 0px 80px 0px 19px;
   font-weight: bold;
 }
 .fonctionnement_choix span {
