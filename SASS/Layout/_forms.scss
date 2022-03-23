@@ -1,14 +1,12 @@
 form {
-    background-color: $background-color_section;
+    background-color: $background-color_page;
 }
 
 .form_recherche {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    @include flexbox;
     height: 51px;
     box-shadow: inset 1px 3px 0px #e5dfdf;
-    background-color: $background-color_recherche;
+    background-color: $background-color_plusfonce;
     &_position {
         margin: 13px 0 15px 102px;
     }
@@ -16,7 +14,7 @@ form {
 
 input {
     border: none;
-    background-color: $background-color_recherche;
+    background-color: $background-color_plusfonce;
     font-weight: bold;
     margin: 13px 15px 15px 0;
 }
