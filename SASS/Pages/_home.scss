@@ -1,15 +1,14 @@
 .fonctionnement {
     height: 440px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    @include flexbox_column;
     padding: 0 16px 50px 30px;
-    & h2 {
+}
+
+h2 {
     margin: 0;
     padding: 55px 0 30px 0;
     font-weight: bold;
     }
-}
 
 .fonctionnement_choix {
     display: flex;
@@ -19,7 +18,7 @@
     background-color: $background-color_page;
     border-radius: 20px 20px 20px 20px;
     margin: 0 0 21px 0;
-    box-shadow: 2px 3px 20px #dfdfdf;
+    @include box-shadow;
     &_p1 {
         margin: 0px 70px 0px 25px;
         font-weight: bold;
@@ -34,11 +33,61 @@
     }
     & span {
         background-color: $color-primary;
-    border-radius: 100%;
-    color: white;
-    font-weight: bold;
-    font-size: small;
-    padding: 5px 8px 5px 8px;
-    margin: 0 21px 0 -11px;
+        border-radius: 100%;
+        color: white;
+        font-weight: bold;
+        font-size: small;
+        padding: 5px 8px 5px 8px;
+        margin: 0 21px 0 -11px;
+    }
+}
+
+.fa-mobile-alt:before, .fa-list-ul:before, .fa-store:before {
+    color: gray;
+}
+
+.restaurants {
+    height: 1215px;
+    background-color: $background-color_page;
+    padding: 0 20px 50px 20px;
+    @include flexbox_column;
+}
+
+figure {
+    width: 335px;
+    height: 250px;
+    background-color: white;
+    border-radius: 15px;
+    position: relative;
+    @include box-shadow;
+    & img {
+        width: 335px;
+        height: 170px;
+        border-radius: 15px 15px 0 0;
+        object-fit: cover;
+    }
+    & div {
+        background-color: $color-tertiary;
+        color: #22a884;
+        font-weight: bold;
+        height: 30px;
+        width: 80px;
+        padding: 7px 13px 10px 13px;
+        position: absolute;
+        top: 13px;
+        left: 243px;
+        font-size: small;
+    }
+    & figcaption {
+        position: relative;
+        padding: 15px 0px 0px 11px;
+        line-height: 25px;
+        & .coeur {
+            @include position_coeur;
+        }
+        & .coeur_plein {
+            @include position_coeur;
+            display: none;
+        }
     }
 }

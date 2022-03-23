@@ -1,8 +1,8 @@
 .form_corps button {
     background: linear-gradient(169deg, $color-secondary, $color-primary);
-    font-weight: bold;
     color: white;
     border: white;
     border-radius: 50px;
     padding: 17px 20px 17px 20px;
+    @include box-shadow;
 }
