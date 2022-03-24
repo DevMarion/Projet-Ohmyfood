@@ -17,7 +17,7 @@ a {
   text-decoration: none;
 }
 
-.form_corps button {
+button {
   background: linear-gradient(169deg, #FF79DA, #9356DC);
   color: white;
   border: white;
@@ -128,7 +128,7 @@ h2 {
   justify-content: space-between;
   height: 70px;
   background-color: #f6f6f6;
-  border-radius: 20px 20px 20px 20px;
+  border-radius: 20px;
   margin: 0 0 21px 0;
   box-shadow: 2px 3px 20px #dfdfdf;
 }
@@ -198,18 +198,20 @@ figure figcaption {
   padding: 15px 0px 0px 11px;
   line-height: 25px;
 }
-figure figcaption .coeur {
+
+.coeur {
   position: absolute;
   left: 285px;
-  top: 20px;
+  top: 25px;
   font-size: 25px;
 }
-figure figcaption .coeur_plein {
+
+.coeur_plein {
   position: absolute;
   left: 285px;
-  top: 20px;
+  top: 25px;
   font-size: 25px;
-  display: none;
+  color: transparent;
 }
 
 header {
@@ -225,6 +227,62 @@ header i {
   width: 170px;
   height: 30px;
   margin: 0;
+}
+
+.img_menu {
+  height: 255px;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+
+.menu {
+  position: relative;
+  background-color: #f6f6f6;
+  top: 219px;
+  border-radius: 40px 40px 0 0;
+  padding: 0 15px 0 13px;
+}
+.menu h1 {
+  font-family: "shrikhand", sans-serif;
+  padding: 30px 0 10px 21px;
+}
+.menu_prix {
+  display: flex;
+}
+
+.menu_champs h2 {
+  font-size: 14px;
+  padding: 40px 0px 23px 0;
+}
+
+.menu_choix {
+  height: 66px;
+  width: 348px;
+  background-color: white;
+  display: flex;
+  margin-bottom: 15px;
+  border-radius: 20px;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  overflow: hidden;
+  line-height: 26px;
+  padding: 0 23px 0 11px;
+}
+.menu_choix_prix {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.menu_choix i {
+  display: none;
+}
+
+button {
+  margin: 50px 94px 82px 94px;
+  padding-left: 46px;
+  padding-right: 46px;
 }
 
 /*# sourceMappingURL=style.css.map */

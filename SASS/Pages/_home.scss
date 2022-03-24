@@ -16,7 +16,7 @@ h2 {
     justify-content: space-between;
     height: 70px;
     background-color: $background-color_page;
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 20px;
     margin: 0 0 21px 0;
     @include box-shadow;
     &_p1 {
@@ -82,12 +82,14 @@ figure {
         position: relative;
         padding: 15px 0px 0px 11px;
         line-height: 25px;
-        & .coeur {
-            @include position_coeur;
-        }
-        & .coeur_plein {
-            @include position_coeur;
-            display: none;
-        }
     }
+}
+
+.coeur {
+    @include position_coeur;
+}
+
+.coeur_plein {
+    @include position_coeur;
+    color: transparent;
 }
