@@ -1,13 +1,17 @@
 footer {
-    height: 200px;
-    background-color: #353535;
-    color: white;
-    padding: 25px 0 40px 25px;
-    line-height: 28px;
-    & h4 {
-        font-family: 'Shrikhand', sans-serif;
-        padding: 0 0 6px 0;
-    }
+    @include footer;
+}
+
+.footer_menu {
+    @include footer;
+    position: absolute;
+    top: 1500px;
+    width: 100%;
+}
+
+h4 {
+    font-family: 'Shrikhand', sans-serif;
+    padding: 0 0 6px 0;
 }
 
 ul {
@@ -37,4 +41,3 @@ li {
         color: white;
     }
 }
-

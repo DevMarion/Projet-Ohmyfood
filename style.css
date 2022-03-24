@@ -26,6 +26,18 @@ button {
   box-shadow: 2px 3px 20px #dfdfdf;
 }
 
+.button_commander {
+  background: linear-gradient(169deg, #FF79DA, #9356DC);
+  color: white;
+  border: white;
+  border-radius: 50px;
+  padding: 17px 20px 17px 20px;
+  box-shadow: 2px 3px 20px #dfdfdf;
+  margin: 50px 85px 82px 85px;
+  padding-left: 46px;
+  padding-right: 46px;
+}
+
 .logo {
   display: block;
   width: 170px;
@@ -75,7 +87,19 @@ footer {
   padding: 25px 0 40px 25px;
   line-height: 28px;
 }
-footer h4 {
+
+.footer_menu {
+  height: 200px;
+  background-color: #353535;
+  color: white;
+  padding: 25px 0 40px 25px;
+  line-height: 28px;
+  position: absolute;
+  top: 1500px;
+  width: 100%;
+}
+
+h4 {
   font-family: "Shrikhand", sans-serif;
   padding: 0 0 6px 0;
 }
@@ -277,12 +301,6 @@ header i {
 }
 .menu_choix i {
   display: none;
-}
-
-button {
-  margin: 50px 94px 82px 94px;
-  padding-left: 46px;
-  padding-right: 46px;
 }
 
 /*# sourceMappingURL=style.css.map */
