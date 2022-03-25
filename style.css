@@ -251,7 +251,6 @@ header i {
 .menu {
   background-color: #f6f6f6;
   border-radius: 40px 40px 0 0;
-  padding: 0 15px 0 13px;
   height: 1195px;
 }
 .menu_titre {
@@ -265,7 +264,7 @@ header i {
 }
 .menu h2 {
   font-size: 18px;
-  padding: 40px 0px 23px 0;
+  padding: 40px 0px 23px 20px;
 }
 
 .menu_coeur {
@@ -281,7 +280,7 @@ header i {
   height: 66px;
   width: 348px;
   background-color: white;
-  margin-bottom: 15px;
+  margin: 0px 0px 15px 13px;
   border-radius: 20px;
   cursor: pointer;
   overflow: hidden;
@@ -291,12 +290,15 @@ header i {
   justify-content: flex-end;
   line-height: 26px;
 }
-.menu_choix_prix {
+.menu_choix_accompagnement {
   display: flex;
   justify-content: space-between;
 }
 .menu_choix i {
   display: none;
+}
+.menu_choix_prix {
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */
