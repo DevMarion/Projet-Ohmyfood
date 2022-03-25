@@ -21,6 +21,13 @@
     box-shadow: 2px 3px 20px #dfdfdf;
 }
 
+@mixin img_menu {
+    height: 255px;
+    width: 100%;
+    margin-bottom: -50px;
+    background-size: cover;
+}
+
 @mixin button {
     background: linear-gradient(169deg, $color-secondary, $color-primary);
     color: white;
@@ -28,12 +35,4 @@
     border-radius: 50px;
     padding: 17px 20px 17px 20px;
     @include box-shadow;
-}
-
-@mixin footer {
-    height: 200px;
-    background-color: #353535;
-    color: white;
-    padding: 25px 0 40px 25px;
-    line-height: 28px;
 }

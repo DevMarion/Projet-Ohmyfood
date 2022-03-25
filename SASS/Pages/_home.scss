@@ -59,6 +59,7 @@ figure {
     background-color: white;
     border-radius: 15px;
     position: relative;
+    pointer: cursor;
     @include box-shadow;
     & img {
         width: 335px;
@@ -82,6 +83,7 @@ figure {
         position: relative;
         padding: 15px 0px 0px 11px;
         line-height: 25px;
+        color: initial;
     }
 }
 
