@@ -27,7 +27,11 @@ button {
   border: white;
   border-radius: 50px;
   padding: 17px 20px 17px 20px;
-  box-shadow: 2px 3px 20px #dfdfdf;
+  box-shadow: 2px 3px 20px #979696;
+}
+button:hover {
+  filter: brightness(115%);
+  box-shadow: 2px 3px 20px #474747;
 }
 
 /* Bouton du menu */
@@ -37,9 +41,12 @@ button {
   border: white;
   border-radius: 50px;
   padding: 17px 20px 17px 20px;
-  box-shadow: 2px 3px 20px #dfdfdf;
+  box-shadow: 2px 3px 20px #979696;
   padding: 18px 48px 20px 47px;
   margin: 50px 94px 83px 94px;
+}
+.menu_bouton:hover {
+  filter: brightness(115%);
 }
 
 .logo {
