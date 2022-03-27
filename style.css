@@ -284,12 +284,32 @@ header i {
 }
 
 .menu_coeur {
+  position: absolute;
+  left: 285px;
+  top: 20px;
   font-size: 25px;
-  padding: 0px 0px 0px 68px;
+  left: 312px;
+  top: 300px;
 }
 
 .menu_coeur_plein {
+  position: absolute;
+  left: 285px;
+  top: 20px;
   font-size: 25px;
+  left: 312px;
+  top: 300px;
+  opacity: 0;
+}
+.menu_coeur_plein:hover {
+  cursor: pointer;
+}
+.menu_coeur_plein:active {
+  color: transparent;
+  background: radial-gradient(#DA86DF, #9B77D4);
+  -webkit-background-clip: text;
+  opacity: 1;
+  transition: opacity 450ms ease-in-out 150ms;
 }
 
 .menu_choix {
