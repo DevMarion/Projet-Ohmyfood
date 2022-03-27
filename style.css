@@ -189,7 +189,6 @@ figure {
   background-color: white;
   border-radius: 15px;
   position: relative;
-  pointer: cursor;
   box-shadow: 2px 3px 20px #dfdfdf;
 }
 figure img {
@@ -220,16 +219,26 @@ figure figcaption {
 .coeur {
   position: absolute;
   left: 285px;
-  top: 25px;
+  top: 20px;
   font-size: 25px;
 }
 
 .coeur_plein {
   position: absolute;
   left: 285px;
-  top: 25px;
+  top: 20px;
   font-size: 25px;
+  opacity: 0;
+}
+.coeur_plein:hover {
+  cursor: pointer;
+}
+.coeur_plein:active {
   color: transparent;
+  background: radial-gradient(#DA86DF, #9B77D4);
+  -webkit-background-clip: text;
+  opacity: 1;
+  transition: opacity 450ms;
 }
 
 header {
@@ -289,7 +298,6 @@ header i {
   background-color: white;
   margin: 0px 0px 15px 13px;
   border-radius: 20px;
-  cursor: pointer;
   overflow: hidden;
   padding: 0 23px 5px 11px;
   display: flex;

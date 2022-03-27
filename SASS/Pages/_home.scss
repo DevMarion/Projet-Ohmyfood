@@ -59,7 +59,6 @@ figure {
     background-color: white;
     border-radius: 15px;
     position: relative;
-    pointer: cursor;
     @include box-shadow;
     & img {
         width: 335px;
@@ -93,5 +92,15 @@ figure {
 
 .coeur_plein {
     @include position_coeur;
-    color: transparent;
+    opacity: 0;
+    &:hover {
+        cursor: pointer;
+    }
+    &:active {
+        color: transparent;
+        background: radial-gradient(#DA86DF, #9B77D4);
+        -webkit-background-clip: text;
+        opacity: 1;
+        transition: opacity 450ms;
+    }
 }
