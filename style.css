@@ -236,7 +236,7 @@ figure figcaption {
 .coeur_plein:active {
   color: transparent;
   background: radial-gradient(#DA86DF, #9B77D4);
-  -webkit-background-clip: text;
+  background-clip: text;
   opacity: 1;
   transition: opacity 450ms ease-in-out 150ms;
 }
@@ -281,6 +281,13 @@ header i {
 .menu h2 {
   font-size: 18px;
   padding: 40px 0px 23px 20px;
+  display: flex;
+  flex-direction: column;
+}
+.menu h2::after {
+  content: "";
+  width: 14%;
+  border-bottom: 4px #99E2D0 solid;
 }
 
 .menu_coeur {
@@ -307,7 +314,7 @@ header i {
 .menu_coeur_plein:active {
   color: transparent;
   background: radial-gradient(#DA86DF, #9B77D4);
-  -webkit-background-clip: text;
+  background-clip: text;
   opacity: 1;
   transition: opacity 450ms ease-in-out 150ms;
 }

@@ -34,6 +34,13 @@ header {
     & h2 {
         font-size: 18px;
         padding: 40px 0px 23px 20px;
+        display: flex;
+        flex-direction: column;
+        &::after {
+            content: "";
+            width: 14%;
+            border-bottom: 4px $color-tertiary solid;
+        }
     }
 }
 
@@ -54,7 +61,7 @@ header {
     &:active {
         color: transparent;
         background: radial-gradient(#DA86DF, #9B77D4);
-        -webkit-background-clip: text;
+        background-clip: text;
         opacity: 1;
         transition: opacity 450ms ease-in-out 150ms;
     }

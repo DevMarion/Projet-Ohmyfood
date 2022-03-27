@@ -99,7 +99,7 @@ figure {
     &:active {
         color: transparent;
         background: radial-gradient(#DA86DF, #9B77D4);
-        -webkit-background-clip: text;
+        background-clip: text;
         opacity: 1;
         transition: opacity 450ms ease-in-out 150ms;
     }
