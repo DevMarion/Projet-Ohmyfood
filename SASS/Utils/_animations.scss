@@ -1,0 +1,39 @@
+                        /* Les boutons */
+
+button:hover {
+        filter: brightness(115%);
+        box-shadow: 2px 3px 20px #474747
+    }
+
+.menu_bouton:hover {
+        filter: brightness(115%);
+    }
+
+                     /* Remplissage des coeurs */
+
+.coeur_plein {
+    &:hover {
+        cursor: pointer;
+    }
+    &:active {
+        color: transparent;
+        background: radial-gradient(#DA86DF, #9B77D4);
+        -webkit-background-clip: text;
+        opacity: 1;
+        transition: opacity 450ms ease-in-out 150ms;
+    }
+}
+
+.menu_coeur_plein {
+    &:hover {
+        cursor: pointer;
+    }
+    &:active {
+        color: transparent;
+        background: radial-gradient(#DA86DF, #9B77D4);
+        -webkit-background-clip: text;
+        opacity: 1;
+        transition: opacity 450ms ease-in-out 150ms;
+    }
+}
+

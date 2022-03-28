@@ -1,9 +1,5 @@
 button {
     @include button;
-    &:hover {
-        filter: brightness(115%);
-        box-shadow: 2px 3px 20px #474747
-    }
 }
 
 /* Bouton du menu */
@@ -12,7 +8,4 @@ button {
     @include button;
     padding: 18px 48px 20px 47px;
     margin: 50px 94px 83px 94px;
-    &:hover {
-        filter: brightness(115%);
-    }
 }

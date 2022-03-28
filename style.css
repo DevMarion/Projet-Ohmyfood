@@ -1,3 +1,36 @@
+/* Les boutons */
+button:hover {
+  filter: brightness(115%);
+  box-shadow: 2px 3px 20px #474747;
+}
+
+.menu_bouton:hover {
+  filter: brightness(115%);
+}
+
+/* Remplissage des coeurs */
+.coeur_plein:hover {
+  cursor: pointer;
+}
+.coeur_plein:active {
+  color: transparent;
+  background: radial-gradient(#DA86DF, #9B77D4);
+  -webkit-background-clip: text;
+  opacity: 1;
+  transition: opacity 450ms ease-in-out 150ms;
+}
+
+.menu_coeur_plein:hover {
+  cursor: pointer;
+}
+.menu_coeur_plein:active {
+  color: transparent;
+  background: radial-gradient(#DA86DF, #9B77D4);
+  -webkit-background-clip: text;
+  opacity: 1;
+  transition: opacity 450ms ease-in-out 150ms;
+}
+
 * {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
@@ -29,10 +62,6 @@ button {
   padding: 17px 20px 17px 20px;
   box-shadow: 2px 3px 20px #979696;
 }
-button:hover {
-  filter: brightness(115%);
-  box-shadow: 2px 3px 20px #474747;
-}
 
 /* Bouton du menu */
 .menu_bouton {
@@ -44,9 +73,6 @@ button:hover {
   box-shadow: 2px 3px 20px #979696;
   padding: 18px 48px 20px 47px;
   margin: 50px 94px 83px 94px;
-}
-.menu_bouton:hover {
-  filter: brightness(115%);
 }
 
 .logo {
@@ -230,16 +256,6 @@ figure figcaption {
   font-size: 25px;
   opacity: 0;
 }
-.coeur_plein:hover {
-  cursor: pointer;
-}
-.coeur_plein:active {
-  color: transparent;
-  background: radial-gradient(#DA86DF, #9B77D4);
-  background-clip: text;
-  opacity: 1;
-  transition: opacity 450ms ease-in-out 150ms;
-}
 
 header {
   display: flex;
@@ -286,7 +302,7 @@ header i {
 }
 .menu h2::after {
   content: "";
-  width: 14%;
+  width: 50px;
   border-bottom: 4px #99E2D0 solid;
 }
 
@@ -307,16 +323,6 @@ header i {
   left: 312px;
   top: 300px;
   opacity: 0;
-}
-.menu_coeur_plein:hover {
-  cursor: pointer;
-}
-.menu_coeur_plein:active {
-  color: transparent;
-  background: radial-gradient(#DA86DF, #9B77D4);
-  background-clip: text;
-  opacity: 1;
-  transition: opacity 450ms ease-in-out 150ms;
 }
 
 .menu_choix {
