@@ -1,3 +1,19 @@
+@keyframes check_ok {
+  0% {
+    transform: translateX(57px);
+  }
+  100% {
+    transform: translateX(-57px);
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(-360deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
 /* Les boutons */
 button:hover {
   filter: brightness(115%);
@@ -29,6 +45,26 @@ button:hover {
   -webkit-background-clip: text;
   opacity: 1;
   transition: opacity 450ms ease-in-out 150ms;
+}
+
+/* Les checks */
+.menu_carte:hover .menu_carte_prix {
+  transform: translateX(-50px);
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  transition-delay: 200ms;
+}
+
+.menu_carte:hover .circle {
+  width: 66px;
+  animation: check_ok 0.5s ease-in-out forwards;
+}
+.menu_carte:hover .circle i {
+  opacity: 1;
+  position: relative;
+  top: 34%;
+  left: 31%;
+  animation: rotation 1.5s ease-in-out forwards;
 }
 
 * {
@@ -284,6 +320,7 @@ header i {
   background-color: #f6f6f6;
   border-radius: 40px 40px 0 0;
   height: 1195px;
+  padding-left: 13px;
 }
 .menu_titre {
   display: flex;
@@ -292,11 +329,11 @@ header i {
 }
 .menu_titre h1 {
   font-family: "shrikhand", sans-serif;
-  padding: 30px 0 10px 21px;
+  padding: 30px 0 10px 8px;
 }
 .menu h2 {
   font-size: 18px;
-  padding: 40px 0px 23px 20px;
+  padding: 40px 0px 23px 7px;
   display: flex;
   flex-direction: column;
 }
@@ -325,28 +362,59 @@ header i {
   opacity: 0;
 }
 
-.menu_choix {
+.menu_carte {
+  display: flex;
+  cursor: pointer;
   height: 66px;
   width: 348px;
   background-color: white;
-  margin: 0px 0px 15px 13px;
+  margin: 0px 0px 15px 0;
   border-radius: 20px;
   overflow: hidden;
-  padding: 0 23px 5px 11px;
+  line-height: 26px;
+  justify-content: flex-start;
+  align-items: flex-end;
+  position: relative;
+}
+.menu_carte_titre {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  line-height: 26px;
+  padding: 0 0 8px 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
-.menu_choix_accompagnement {
+.menu_carte_accompagnement {
   display: flex;
   justify-content: space-between;
+  width: 320px;
 }
-.menu_choix i {
-  display: none;
+.menu_carte_accompagnement p {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
-.menu_choix_prix {
+.menu_carte_prix {
   font-weight: bold;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.circle {
+  width: 0;
+  height: 100%;
+  background-color: #99E2D0;
+  border-radius: 0 20px 20px 0;
+  padding: 0;
+  position: absolute;
+  right: -68px;
+}
+
+.circle i {
+  opacity: 0;
+  color: white;
+  background-color: #99E2D0;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -22,18 +22,19 @@ header {
     background-color: $background-color_page;
     border-radius: 40px 40px 0 0;
     height: 1195px;
+    padding-left: 13px;
     &_titre {
         display: flex;
         align-items: baseline;
         justify-content: space-between;
         & h1 {
             font-family: "shrikhand", sans-serif;
-            padding: 30px 0 10px 21px;
+            padding: 30px 0 10px 8px;
         }
     }
     & h2 {
         font-size: 18px;
-        padding: 40px 0px 23px 20px;
+        padding: 40px 0px 23px 7px;
         display: flex;
         flex-direction: column;
         &::after {
@@ -57,26 +58,57 @@ header {
     opacity: 0;
 }
 
-.menu_choix {
+.menu_carte {
+    display: flex;
+    cursor: pointer;
     height: 66px;
     width: 348px;
     background-color: white;
-    margin: 0px 0px 15px 13px;
+    margin: 0px 0px 15px 0;
     border-radius: 20px;
     overflow: hidden;
-    padding: 0 23px 5px 11px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
     line-height: 26px;
+    justify-content: flex-start;
+    align-items: flex-end;
+    position: relative;
+    &_titre {
+        display: flex;
+        flex-direction: column;
+        padding: 0 0 8px 10px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
     &_accompagnement {
         display: flex;
         justify-content: space-between;
-    }
-    & i {
-        display: none;
+        width: 320px;
+        & p {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        }
     }
     &_prix {
-        font-weight: bold;
+            font-weight: bold;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
     }
+}
+
+.circle {
+    width: 0;
+    height: 100%;
+    background-color: $color-tertiary;
+    border-radius: 0 20px 20px 0;
+    padding: 0;
+    position: absolute;
+    right: -68px;
+}
+
+.circle i {
+    opacity: 0;
+    color: white;
+    background-color: $color-tertiary;
 }

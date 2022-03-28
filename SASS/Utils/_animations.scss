@@ -37,3 +37,23 @@ button:hover {
     }
 }
 
+                /* Les checks */
+
+.menu_carte:hover .menu_carte_prix{
+    transform: translateX(-50px);
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: 200ms;
+}
+
+.menu_carte:hover .circle {
+    width: 66px;
+    animation: check_ok 0.5s ease-in-out forwards;
+    & i {
+        opacity: 1;
+        position: relative;
+        top: 34%;
+        left: 31%;
+        animation: rotation 1.5s ease-in-out forwards;
+    }
+}

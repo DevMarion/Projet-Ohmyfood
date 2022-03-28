@@ -1,0 +1,17 @@
+@keyframes check_ok {
+    0% {
+        transform: translateX(57px);
+    }
+    100% {
+        transform: translateX(-57px);
+    }
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(-360deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
