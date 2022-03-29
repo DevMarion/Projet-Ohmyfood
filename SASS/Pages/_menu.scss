@@ -48,13 +48,13 @@ header {
 .menu_coeur {
     @include position_coeur;
     left: 312px;
-    top: 300px;
+    top: 35px;
 }
 
 .menu_coeur_plein {
     @include position_coeur;
     left: 312px;
-    top: 300px;
+    top: 35px;
     opacity: 0;
 }
 

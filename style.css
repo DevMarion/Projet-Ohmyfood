@@ -14,6 +14,121 @@
     transform: rotate(0);
   }
 }
+@keyframes defilement {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* defilement */
+.def {
+  animation-name: defilement;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 100ms;
+}
+
+.def_1 {
+  animation-name: defilement;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 250ms;
+}
+
+.def_2 {
+  animation-name: defilement;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 400ms;
+}
+
+.def_3 {
+  animation-name: defilement;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 550ms;
+}
+
+.def_4 {
+  animation-name: defilement;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 700ms;
+}
+
+.def_5 {
+  animation-name: defilement;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 850ms;
+}
+
+.def_6 {
+  animation-name: defilement;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 1000ms;
+}
+
+.def_7 {
+  animation-name: defilement;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 1150ms;
+}
+
+.def_8 {
+  animation-name: defilement;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 1300ms;
+}
+
+.def_9 {
+  animation-name: defilement;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 1450ms;
+}
+
+.def_10 {
+  animation-name: defilement;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 1600ms;
+}
+
+.def_11 {
+  animation-name: defilement;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 1750ms;
+}
+
+.def_12 {
+  animation-name: defilement;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 1900ms;
+}
+
 /* Les boutons */
 button:hover {
   filter: brightness(115%);
@@ -352,7 +467,7 @@ header i {
   top: 20px;
   font-size: 25px;
   left: 312px;
-  top: 300px;
+  top: 35px;
 }
 
 .menu_coeur_plein {
@@ -361,7 +476,7 @@ header i {
   top: 20px;
   font-size: 25px;
   left: 312px;
-  top: 300px;
+  top: 35px;
   opacity: 0;
 }
 

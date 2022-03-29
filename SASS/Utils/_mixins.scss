@@ -36,3 +36,10 @@
     padding: 17px 20px 17px 20px;
     box-shadow: 2px 3px 20px #979696;
 }
+
+@mixin animation_def {
+    animation-name: defilement;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;    
+}
