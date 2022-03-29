@@ -83,17 +83,14 @@ header {
         display: flex;
         justify-content: space-between;
         width: 320px;
-        & p {
+    }
+    &_legumes {
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
-        }
     }
     &_prix {
             font-weight: bold;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            overflow: hidden;
     }
 }
 

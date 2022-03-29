@@ -48,11 +48,14 @@ button:hover {
 }
 
 /* Les checks */
-.menu_carte:hover .menu_carte_prix {
-  transform: translateX(-50px);
-  transition-duration: 0.5s;
-  transition-timing-function: ease;
-  transition-delay: 200ms;
+.menu_carte:hover .menu_carte_titre {
+  width: 80%;
+  transition: width 500ms ease;
+}
+
+.menu_carte:hover .menu_carte_accompagnement {
+  width: 100%;
+  transition: width 500ms ease;
 }
 
 .menu_carte:hover .circle {
@@ -389,16 +392,13 @@ header i {
   justify-content: space-between;
   width: 320px;
 }
-.menu_carte_accompagnement p {
+.menu_carte_legumes {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
 }
 .menu_carte_prix {
   font-weight: bold;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
 }
 
 .circle {
