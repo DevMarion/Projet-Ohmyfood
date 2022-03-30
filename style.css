@@ -238,6 +238,20 @@ button:hover {
   animation: rotation 1.5s ease-in-out forwards;
 }
 
+/* Survol violet*/
+.fonctionnement_choix:hover {
+  background-color: #F5EDFF;
+  cursor: pointer;
+}
+.fonctionnement_choix:hover .fa-mobile-alt:before, .fonctionnement_choix:hover .fa-list-ul:before, .fonctionnement_choix:hover .fa-store:before {
+  color: #9356DC;
+}
+
+/* Grossissement carte*/
+figure:hover {
+  transform: scale(1.08);
+}
+
 * {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;

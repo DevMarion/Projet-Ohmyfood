@@ -154,3 +154,19 @@ button:hover {
         animation: rotation 1.5s ease-in-out forwards;
     }
 }
+
+                /* Survol violet*/
+
+.fonctionnement_choix:hover {
+    background-color: #F5EDFF;
+    cursor: pointer;
+    & .fa-mobile-alt:before, .fa-list-ul:before, .fa-store:before {
+        color: $color-primary;
+    }
+}
+
+                /* Grossissement carte*/
+
+figure:hover {
+    transform: scale(1.08);
+}
