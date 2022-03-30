@@ -65,7 +65,7 @@
     animation-delay: 1900ms;
 }
 
-/* Les boutons */
+                /* Les boutons */
 
 button:hover {
         filter: brightness(115%);
@@ -126,4 +126,27 @@ button:hover {
         left: 31%;
         animation: rotation 1.5s ease-in-out forwards;
     }
+}
+
+                /* loader spinner*/
+
+.mot_1 {
+    @include animation_mot;
+    animation-delay: 7.106622221506186ms;
+}
+        
+.mot_2 {
+    @include animation_mot;
+    animation-delay: 1028.7948611635468ms;
+}
+
+.mot_3 {
+    @include animation_mot;
+    animation-delay: 2012.5855190137213ms;
+}
+
+.rond {
+    display: inline-block;
+    animation: rotation_loader 1969.34ms ease 34.6192ms infinite;
+    margin-left: 155px;
 }

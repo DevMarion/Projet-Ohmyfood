@@ -43,3 +43,10 @@
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;    
 }
+
+@mixin animation_mot {
+    animation-name: mot;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;    
+}

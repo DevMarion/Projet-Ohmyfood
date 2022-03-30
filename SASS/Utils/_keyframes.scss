@@ -26,3 +26,29 @@
         transform: translateY(0);
     }
 }
+
+@keyframes rotation_loader {
+    0% { 
+      transform: rotate(0deg); 
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+    100% { 
+      transform: rotate(360deg); 
+    }
+  }
+
+  @keyframes mot {
+    0% {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+  
+  

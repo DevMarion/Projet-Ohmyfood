@@ -24,6 +24,27 @@
     transform: translateY(0);
   }
 }
+@keyframes rotation_loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes mot {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 /* defilement */
 .def {
   animation-name: defilement;
@@ -185,6 +206,37 @@ button:hover {
   animation: rotation 1.5s ease-in-out forwards;
 }
 
+/* loader spinner*/
+.mot_1 {
+  animation-name: mot;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 7.1066222215ms;
+}
+
+.mot_2 {
+  animation-name: mot;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 1028.7948611635ms;
+}
+
+.mot_3 {
+  animation-name: mot;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 2012.5855190137ms;
+}
+
+.rond {
+  display: inline-block;
+  animation: rotation_loader 1969.34ms ease 34.6192ms infinite;
+  margin-left: 155px;
+}
+
 * {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
@@ -302,6 +354,48 @@ nav div i {
 
 .footer_lien_2 {
   padding: 0 188px 0 0;
+}
+
+/* les mots */
+.loader {
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+}
+
+.mot {
+  text-align: center;
+  padding-top: 272px;
+}
+
+.mot_1, .mot_2, .mot_3 {
+  font-weight: bold;
+  font-family: "Shrikhand", sans-serif;
+  font-size: 50px;
+}
+
+.mot_1, .mot_3 {
+  color: #9356DC;
+}
+
+.mot_2, .mot_4 {
+  color: #FF79DA;
+}
+
+/* Les ronds */
+.rond_1, .rond_2, .rond_3, .rond_4 {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.rond_1, .rond_4 {
+  background-color: #9356DC;
+}
+
+.rond_2, .rond_3 {
+  background-color: #FF79DA;
 }
 
 .fonctionnement {
