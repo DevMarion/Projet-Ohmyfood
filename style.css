@@ -35,16 +35,47 @@
     transform: rotate(360deg);
   }
 }
-@keyframes mot {
-  0% {
-    opacity: 0;
-    transform: translateX(20px);
-  }
+@keyframes loader {
   100% {
-    opacity: 1;
-    transform: translateX(0);
+    height: 0;
+    opacity: 0;
   }
 }
+/* loader spinner*/
+.mot_1 {
+  animation-name: defilement;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 7.1066222215ms;
+}
+
+.mot_2 {
+  animation-name: defilement;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 1028.7948611635ms;
+}
+
+.mot_3 {
+  animation-name: defilement;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 2012.5855190137ms;
+}
+
+.rond {
+  display: inline-block;
+  animation: rotation_loader 1969.34ms ease 34.6192ms infinite;
+  margin-left: 155px;
+}
+
+.loader {
+  animation: loader 1000ms linear forwards 3000ms;
+}
+
 /* defilement */
 .def {
   animation-name: defilement;
@@ -206,37 +237,6 @@ button:hover {
   animation: rotation 1.5s ease-in-out forwards;
 }
 
-/* loader spinner*/
-.mot_1 {
-  animation-name: mot;
-  animation-duration: 1s;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
-  animation-delay: 7.1066222215ms;
-}
-
-.mot_2 {
-  animation-name: mot;
-  animation-duration: 1s;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
-  animation-delay: 1028.7948611635ms;
-}
-
-.mot_3 {
-  animation-name: mot;
-  animation-duration: 1s;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
-  animation-delay: 2012.5855190137ms;
-}
-
-.rond {
-  display: inline-block;
-  animation: rotation_loader 1969.34ms ease 34.6192ms infinite;
-  margin-left: 155px;
-}
-
 * {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
@@ -359,8 +359,7 @@ nav div i {
 /* les mots */
 .loader {
   height: 100vh;
-  width: 100%;
-  background-color: black;
+  background-color: #eaeaea;
 }
 
 .mot {
