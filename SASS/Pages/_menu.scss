@@ -15,7 +15,22 @@ header {
 
 .img_menu_A {
     @include img_menu;
+    background-image: url("/Images/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+}
+
+.img_menu_B {
+    @include img_menu;
+    background-image: url("/Images/stil-u2Lp8tXIcjw-unsplash.jpg");
+}
+
+.img_menu_C {
+    @include img_menu;
     background-image: url("/Images/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+}
+
+.img_menu_D {
+    @include img_menu;
+    background-image: url("/Images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
 }
 
 .menu {
@@ -43,6 +58,13 @@ header {
             border-bottom: 4px $color-tertiary solid;
         }
     }
+}
+
+.menu_B {
+    background-color: #f6f6f6;
+    border-radius: 40px 40px 0 0;
+    height: 1336px;
+    padding-left: 13px;
 }
 
 .menu_coeur {
@@ -78,6 +100,11 @@ header {
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
+        & h3 {
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
     }
     &_accompagnement {
         display: flex;

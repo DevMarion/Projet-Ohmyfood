@@ -92,6 +92,11 @@
     animation-delay: 1900ms;
 }
 
+.def_13 {
+    @include animation_def;
+    animation-delay: 2050ms;
+}
+
                 /* Les boutons */
 
 button:hover {

@@ -182,6 +182,14 @@
   animation-delay: 1900ms;
 }
 
+.def_13 {
+  animation-name: defilement;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 2050ms;
+}
+
 /* Les boutons */
 button:hover {
   filter: brightness(115%);
@@ -295,7 +303,7 @@ button {
   box-shadow: 2px 3px 20px #979696;
   cursor: pointer;
   padding: 18px 48px 20px 47px;
-  margin: 50px 94px 83px 94px;
+  margin: 50px 0 83px 94px;
 }
 
 .logo {
@@ -541,7 +549,31 @@ header i {
   width: 100%;
   margin-bottom: -50px;
   background-size: cover;
+  background-image: url("/Images/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+}
+
+.img_menu_B {
+  height: 255px;
+  width: 100%;
+  margin-bottom: -50px;
+  background-size: cover;
+  background-image: url("/Images/stil-u2Lp8tXIcjw-unsplash.jpg");
+}
+
+.img_menu_C {
+  height: 255px;
+  width: 100%;
+  margin-bottom: -50px;
+  background-size: cover;
   background-image: url("/Images/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+}
+
+.img_menu_D {
+  height: 255px;
+  width: 100%;
+  margin-bottom: -50px;
+  background-size: cover;
+  background-image: url("/Images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
 }
 
 .menu {
@@ -569,6 +601,13 @@ header i {
   content: "";
   width: 50px;
   border-bottom: 4px #99E2D0 solid;
+}
+
+.menu_B {
+  background-color: #f6f6f6;
+  border-radius: 40px 40px 0 0;
+  height: 1336px;
+  padding-left: 13px;
 }
 
 .menu_coeur {
@@ -608,6 +647,11 @@ header i {
   display: flex;
   flex-direction: column;
   padding: 0 0 8px 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.menu_carte_titre h3 {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
