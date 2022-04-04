@@ -260,7 +260,7 @@ figure:hover {
   transform: scale(1.08);
 }
 
-@media (min-width: 376px) and (max-width: 768px) {
+@media (min-width: 376px) {
   .menu_carte:hover .circle {
     width: 13%;
   }
@@ -311,7 +311,7 @@ button {
   margin: 50px 0 83px 82px;
 }
 
-@media (min-width: 376px) and (max-width: 768px) {
+@media (min-width: 376px) {
   .menu_bouton {
     margin-left: 40%;
   }
@@ -344,7 +344,7 @@ header a {
 }
 
 /* Pour les first mobile*/
-@media (min-width: 376px) and (max-width: 768px) {
+@media (min-width: 376px) {
   header {
     justify-content: center;
   }
@@ -389,7 +389,7 @@ h1 {
 }
 
 /* Pour les first mobile*/
-@media (min-width: 376px) and (max-width: 768px) {
+@media (min-width: 376px) {
   .form_recherche {
     justify-content: center;
   }
@@ -428,7 +428,7 @@ nav div i {
 }
 
 /* Pour les first mobile*/
-@media (min-width: 376px) and (max-width: 768px) {
+@media (min-width: 376px) {
   footer {
     text-align: center;
   }
@@ -487,7 +487,13 @@ nav div i {
 }
 
 /* Pour les first mobile*/
-@media (min-width: 376px) and (max-width: 768px) {
+@media (min-width: 376px) {
+  .rond {
+    margin-left: 40%;
+  }
+}
+/* Pour les tablettes*/
+@media (min-width: 769px) {
   .rond {
     margin-left: 45%;
   }
@@ -603,7 +609,7 @@ figure figcaption {
 }
 
 /* Pour les first mobile*/
-@media (min-width: 376px) and (max-width: 768px) {
+@media (min-width: 376px) {
   .fonctionnement {
     align-items: center;
   }
@@ -620,6 +626,13 @@ figure figcaption {
 
   figure {
     margin-bottom: 7%;
+  }
+}
+/* Pour les tablettes*/
+@media (min-width: 769px) {
+  .restaurants_cartes {
+    flex-direction: row;
+    align-content: flex-start;
   }
 }
 .img_menu_A {
@@ -766,7 +779,7 @@ figure figcaption {
 }
 
 /* Pour les first mobile*/
-@media (min-width: 376px) and (max-width: 768px) {
+@media (min-width: 376px) {
   .img_menu_A, .img_menu_C, .img_menu_D {
     background-position: 100% 77%;
   }

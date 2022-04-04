@@ -44,8 +44,18 @@
 
                         /* Pour les first mobile*/
 
-@media (min-width: 376px) and (max-width: 768px) {
+@media (min-width: 376px) {
+    .rond {
+        margin-left: 40%;
+    }
+}
+
+                        /* Pour les tablettes*/
+
+@media (min-width: 769px) {
     .rond {
         margin-left: 45%;
     }
 }
+
+                        

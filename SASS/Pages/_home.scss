@@ -102,7 +102,7 @@ figure {
 
                         /* Pour les first mobile*/
 
-@media (min-width: 376px) and (max-width: 768px) {
+@media (min-width: 376px) {
     .fonctionnement {
         align-items: center;
     }
@@ -119,5 +119,14 @@ figure {
 
     figure {
         margin-bottom: 7%;
+    }
+}
+
+                        /* Pour les tablettes*/
+
+@media (min-width: 769px) {
+    .restaurants_cartes {
+        flex-direction: row;
+        align-content: flex-start;
     }
 }
