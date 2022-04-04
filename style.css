@@ -225,7 +225,7 @@ button:hover {
 
 /* Les checks */
 .menu_carte:hover .menu_carte_titre {
-  width: 80%;
+  width: 85%;
   transition: width 500ms ease;
 }
 
@@ -235,7 +235,7 @@ button:hover {
 }
 
 .menu_carte:hover .circle {
-  width: 66px;
+  width: 17%;
   animation: check_ok 0.5s ease-in-out forwards;
 }
 .menu_carte:hover .circle i {
@@ -260,6 +260,11 @@ figure:hover {
   transform: scale(1.08);
 }
 
+@media (min-width: 376px) and (max-width: 768px) {
+  .menu_carte:hover .circle {
+    width: 13%;
+  }
+}
 * {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
@@ -306,6 +311,20 @@ button {
   margin: 50px 0 83px 82px;
 }
 
+@media (min-width: 376px) and (max-width: 768px) {
+  .menu_bouton {
+    margin-left: 40%;
+  }
+}
+header {
+  display: flex;
+  align-items: center;
+  height: 62px;
+}
+header i {
+  margin: 30px 66px 30px 28px;
+}
+
 .logo {
   display: block;
   width: 170px;
@@ -318,8 +337,18 @@ header a {
   color: initial;
 }
 
+.logo_menu {
+  width: 170px;
+  height: 30px;
+  margin: 0;
+}
+
 /* Pour les first mobile*/
 @media (min-width: 376px) and (max-width: 768px) {
+  header {
+    justify-content: center;
+  }
+
   .logo {
     width: 32%;
     height: 70%;
@@ -593,21 +622,6 @@ figure figcaption {
     margin-bottom: 7%;
   }
 }
-header {
-  display: flex;
-  align-items: center;
-  height: 62px;
-}
-header i {
-  margin: 30px 66px 30px 28px;
-}
-
-.logo_menu {
-  width: 170px;
-  height: 30px;
-  margin: 0;
-}
-
 .img_menu_A {
   height: 255px;
   width: 100%;
@@ -644,6 +658,7 @@ header i {
   background-color: #f6f6f6;
   border-radius: 40px 40px 0 0;
   height: 1254px;
+  padding-right: 13px;
   padding-left: 13px;
 }
 .menu_titre {
@@ -697,7 +712,7 @@ header i {
   display: flex;
   cursor: pointer;
   height: 66px;
-  width: 348px;
+  width: 100%;
   background-color: white;
   margin: 0px 0px 15px 0;
   border-radius: 20px;
@@ -723,7 +738,7 @@ header i {
 .menu_carte_accompagnement {
   display: flex;
   justify-content: space-between;
-  width: 320px;
+  width: 327px;
 }
 .menu_carte_legumes {
   text-overflow: ellipsis;
@@ -748,6 +763,43 @@ header i {
   opacity: 0;
   color: white;
   background-color: #99E2D0;
+}
+
+/* Pour les first mobile*/
+@media (min-width: 376px) and (max-width: 768px) {
+  .img_menu_A, .img_menu_C, .img_menu_D {
+    background-position: 100% 77%;
+  }
+
+  .img_menu_B {
+    background-position: 100% 62%;
+  }
+
+  .menu_titre {
+    justify-content: center;
+  }
+  .menu_titre h1 {
+    font-size: 148%;
+  }
+
+  .menu_coeur, .menu_coeur_plein {
+    left: 84%;
+  }
+
+  .menu h2 {
+    align-items: center;
+  }
+
+  .menu_carte {
+    width: 100%;
+  }
+  .menu_carte_titre {
+    padding: 0 0 8px 4%;
+    width: 100%;
+  }
+  .menu_carte_accompagnement {
+    width: 96%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

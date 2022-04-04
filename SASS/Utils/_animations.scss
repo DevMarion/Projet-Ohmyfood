@@ -139,7 +139,7 @@ button:hover {
                 /* Les checks */
 
 .menu_carte:hover .menu_carte_titre {
-    width: 80%;
+    width: 85%;
     transition: width 500ms ease;
 }
 
@@ -149,7 +149,7 @@ button:hover {
 }
 
 .menu_carte:hover .circle {
-    width: 66px;
+    width: 17%;
     animation: check_ok 0.5s ease-in-out forwards;
     & i {
         opacity: 1;
@@ -174,4 +174,10 @@ button:hover {
 
 figure:hover {
     transform: scale(1.08);
+}
+
+@media (min-width: 376px) and (max-width: 768px) {
+    .menu_carte:hover .circle {
+        width: 13%;
+    }
 }
