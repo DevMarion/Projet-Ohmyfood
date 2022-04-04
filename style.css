@@ -311,6 +311,7 @@ button {
   margin: 50px 0 83px 82px;
 }
 
+/* Pour les first mobiles*/
 @media (min-width: 376px) {
   .menu_bouton {
     margin-left: 40%;
@@ -349,7 +350,7 @@ header a {
     justify-content: center;
   }
 
-  .logo {
+  .logo, .logo_menu {
     width: 32%;
     height: 70%;
   }
@@ -812,6 +813,16 @@ figure figcaption {
   }
   .menu_carte_accompagnement {
     width: 96%;
+  }
+}
+/* Pour les tablettes*/
+@media (min-width: 769px) {
+  .menu_titre h1 {
+    font-size: 240%;
+  }
+
+  .menu h2 {
+    align-items: flex-start;
   }
 }
 

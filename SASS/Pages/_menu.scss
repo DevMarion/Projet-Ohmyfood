@@ -160,6 +160,16 @@
             width: 96%;
         }
     }
+}
 
-    
+                        /* Pour les tablettes*/
+
+@media (min-width: 769px) {
+    .menu_titre h1 {
+        font-size: 240%;
+    }
+
+    .menu h2 {
+        align-items: flex-start;
+    }
 }
