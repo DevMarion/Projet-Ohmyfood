@@ -30,3 +30,14 @@ h1 {
     margin: 0;
 }
 
+                        /* Pour les first mobile*/
+
+@media (min-width: 376px) and (max-width: 768px) {
+    .form_recherche {
+        justify-content: center;
+    }
+
+    .form_recherche_position i {
+        padding: 0 25px 0 0;
+    }
+}

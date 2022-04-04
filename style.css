@@ -271,7 +271,7 @@ figure:hover {
 }
 
 h1 {
-  font-size: 28px;
+  font-size: 24px;
 }
 
 h1, h2, h3, h4, button {
@@ -318,6 +318,13 @@ header a {
   color: initial;
 }
 
+/* Pour les first mobile*/
+@media (min-width: 376px) and (max-width: 768px) {
+  .logo {
+    width: 32%;
+    height: 70%;
+  }
+}
 form {
   background-color: #f6f6f6;
 }
@@ -352,6 +359,16 @@ h1 {
   margin: 0;
 }
 
+/* Pour les first mobile*/
+@media (min-width: 376px) and (max-width: 768px) {
+  .form_recherche {
+    justify-content: center;
+  }
+
+  .form_recherche_position i {
+    padding: 0 25px 0 0;
+  }
+}
 footer {
   height: 200px;
   background-color: #353535;
@@ -381,6 +398,24 @@ nav div i {
   padding: 0 188px 0 0;
 }
 
+/* Pour les first mobile*/
+@media (min-width: 376px) and (max-width: 768px) {
+  footer {
+    text-align: center;
+  }
+
+  nav div {
+    justify-content: center;
+  }
+
+  .footer_lien_1, .footer_lien_2 {
+    padding: 0;
+  }
+
+  .footer_lien_1 i, .footer_lien_2 i {
+    padding-right: 2%;
+  }
+}
 /* les mots */
 .loader {
   height: 100vh;
@@ -422,6 +457,12 @@ nav div i {
   background-color: #FF79DA;
 }
 
+/* Pour les first mobile*/
+@media (min-width: 376px) and (max-width: 768px) {
+  .rond {
+    margin-left: 45%;
+  }
+}
 .fonctionnement {
   height: 440px;
   display: flex;
@@ -476,9 +517,12 @@ h2 {
   height: 1215px;
   background-color: #f6f6f6;
   padding: 0 20px 50px 20px;
+}
+.restaurants_cartes {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  height: 1058px;
+  justify-content: space-around;
 }
 
 figure {
@@ -529,6 +573,26 @@ figure figcaption {
   opacity: 0;
 }
 
+/* Pour les first mobile*/
+@media (min-width: 376px) and (max-width: 768px) {
+  .fonctionnement {
+    align-items: center;
+  }
+
+  .restaurants {
+    height: auto;
+  }
+
+  .restaurants_cartes {
+    flex-wrap: wrap;
+    align-content: center;
+    height: auto;
+  }
+
+  figure {
+    margin-bottom: 7%;
+  }
+}
 header {
   display: flex;
   align-items: center;

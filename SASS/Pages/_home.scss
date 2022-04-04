@@ -50,7 +50,12 @@ h2 {
     height: 1215px;
     background-color: $background-color_page;
     padding: 0 20px 50px 20px;
-    @include flexbox_column;
+    &_cartes {
+        display: flex;
+        flex-direction: column;
+        height: 1058px;
+        justify-content: space-around;
+    }
 }
 
 figure {
@@ -93,4 +98,26 @@ figure {
 .coeur_plein {
     @include position_coeur;
     opacity: 0;
+}
+
+                        /* Pour les first mobile*/
+
+@media (min-width: 376px) and (max-width: 768px) {
+    .fonctionnement {
+        align-items: center;
+    }
+
+    .restaurants {
+        height: auto;
+    }
+
+    .restaurants_cartes {
+        flex-wrap: wrap;
+        align-content: center;
+        height: auto;
+    }
+
+    figure {
+        margin-bottom: 7%;
+    }
 }

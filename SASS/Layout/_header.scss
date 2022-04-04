@@ -10,3 +10,12 @@
 header a {
     color: initial;
 }
+
+                        /* Pour les first mobile*/
+
+@media (min-width: 376px) and (max-width: 768px) {
+    .logo {
+        width: 32%;
+        height: 70%;
+    }
+}

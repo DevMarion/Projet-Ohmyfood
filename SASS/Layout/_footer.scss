@@ -27,3 +27,22 @@ nav div {
     padding: 0 188px 0 0;
 }
 
+                        /* Pour les first mobile*/
+
+@media (min-width: 376px) and (max-width: 768px) {
+    footer {
+        text-align: center;
+    }
+
+    nav div {
+        justify-content: center;
+    }
+
+    .footer_lien_1, .footer_lien_2 {
+        padding: 0;
+    }
+
+    .footer_lien_1 i, .footer_lien_2 i {
+        padding-right: 2%;
+    }
+}

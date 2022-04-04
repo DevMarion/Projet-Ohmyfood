@@ -41,3 +41,11 @@
 .rond_2, .rond_3 {
     background-color: $color-secondary;
 }
+
+                        /* Pour les first mobile*/
+
+@media (min-width: 376px) and (max-width: 768px) {
+    .rond {
+        margin-left: 45%;
+    }
+}
