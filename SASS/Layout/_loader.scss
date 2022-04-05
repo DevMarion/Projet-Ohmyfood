@@ -58,4 +58,25 @@
     }
 }
 
+                        /* Pour les desktop*/
+
+@media (min-width: 992px) {
+
+    .mot_1, .mot_2, .mot_3 {
+        font-size: 200px;
+    }
+
+    .rond_1, .rond_2, .rond_3, .rond_4 {
+        height: 100px;
+        width: 100px;
+    }
+
+    header {
+        height: 135px;
+    }
+
+    .fa-arrow-left:before {
+        font-size: 40px;
+    }
+}
                         

@@ -17,3 +17,11 @@ button {
         margin-left: 40%;
     }
 }
+
+                        /* Pour les desktop*/
+
+@media (min-width: 992px) {
+    button {
+        padding: 2% 4% 2% 4%;
+    }
+}

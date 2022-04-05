@@ -20,3 +20,15 @@ a {
     text-decoration: none;
     color: white;
 }
+
+                        /* Pour les desktop*/
+
+@media (min-width: 992px) {
+    body {
+        font-size: 155%;
+    }
+
+    h1 {
+        font-size: 175%;
+    }
+}

@@ -130,3 +130,66 @@ figure {
         align-content: flex-start;
     }
 }
+
+                        /* Pour les desktop*/
+
+@media (min-width: 992px) {
+    .fonctionnement {
+        justify-content: space-evenly;
+        &_multichoix {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+        &_choix {
+        width: 32%;
+        justify-content: flex-start;
+        }
+    }
+
+    .fonctionnement_choix_p1, .fonctionnement_choix_p2, .fonctionnement_choix_p3 {
+        margin: 0 0 0 4%;
+    }
+
+    .restaurants_cartes a {
+        width: 35%;
+        height: 375px;
+        margin-bottom: 3%;
+    }
+
+    .restaurants_cartes a figure {
+        width: 100%;
+        height: 100%;
+    }
+
+    figure img {
+        width: 100%;
+        height: 80%;
+    }
+
+    figure div {
+        height: 11%;
+        width: 26%;
+        font-size: 100%;
+        left: 72%;
+    }
+
+    figure figcaption {
+        padding: 1% 0px 0px 2%;
+        line-height: 118%;
+    }
+
+    figcaption h3 {
+        font-size: 98%;
+    }
+
+    figcaption p {
+        font-size: 90%;
+    }
+
+    .coeur, .coeur_plein {
+        left: 85%;
+        top: 24%;
+        font-size: 37px;
+    }
+}

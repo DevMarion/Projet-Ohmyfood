@@ -41,3 +41,18 @@ h1 {
         padding: 0 25px 0 0;
     }
 }
+
+                        /* Pour les desktop*/
+
+@media (min-width: 992px) {
+    .form_recherche {
+        height: 72px;
+    }
+
+    .form_corps {
+        height: 360px;
+        &_p {
+            margin: 0% 0% 4% 0%;
+        }
+    }
+}
