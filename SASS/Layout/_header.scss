@@ -38,3 +38,20 @@ header a {
         height: 70%;
     }
 }
+
+                        /* Pour les desktop*/
+
+@media (min-width: 992px) {
+    header {
+        height: 100%;
+    }
+
+    .fa-arrow-left:before {
+        font-size: 135%;
+    }
+
+    .logo, .logo_menu {
+        width: 25%;
+        height: 50%;
+    }
+}

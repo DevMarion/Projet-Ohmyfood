@@ -181,3 +181,11 @@ figure:hover {
         width: 13%;
     }
 }
+
+                        /* Pour les desktop*/
+
+@media (min-width: 992px) {
+    .menu_carte:hover .circle {
+        width: 17%;
+    }
+}

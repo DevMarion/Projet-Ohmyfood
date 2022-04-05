@@ -173,3 +173,58 @@
         align-items: flex-start;
     }
 }
+
+                        /* Pour les desktop*/
+
+@media (min-width: 992px) {
+    .img_menu_A, .img_menu_B, .img_menu_C, .img_menu_D {
+        height: 350px;
+    }
+
+    .img_menu_A, .img_menu_C {
+    background-position: 100% 63%;
+    }
+
+    .img_menu_B {
+        background-position: 100% 56%;
+    }
+
+    .img_menu_D {
+        background-position: 100% 74%;
+    }
+
+    .menu_coeur, .menu_coeur_plein {
+        font-size: 200%;
+    }
+
+    .menu {
+        height: auto;
+        &_page {
+        display: flex;
+        justify-content: space-between;
+        height: 46%;
+            &_choix {
+            width: 32%;
+            }
+        }
+    }
+
+    .menu h2 {
+        font-size: 100%;
+    }
+
+    .menu_carte {
+        align-items: center;
+        line-height: 141%;
+        height: 21%;
+        &_titre h3 {
+            font-size: 100%;
+        }
+        &_legumes {
+            font-size: 85%;
+        }
+        &_prix {
+            font-size: 80%;
+        }
+    }
+}
