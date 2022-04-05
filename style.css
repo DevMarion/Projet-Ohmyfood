@@ -358,6 +358,11 @@ button {
   button {
     padding: 2% 4% 2% 4%;
   }
+
+  .menu_bouton {
+    margin-left: 40%;
+    margin-top: 17%;
+  }
 }
 header {
   display: flex;
@@ -1009,7 +1014,7 @@ figure figcaption {
   .menu_carte {
     align-items: center;
     line-height: 141%;
-    height: 21%;
+    height: 27%;
   }
   .menu_carte_titre h3 {
     font-size: 100%;
