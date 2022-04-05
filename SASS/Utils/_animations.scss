@@ -110,20 +110,7 @@ button:hover {
 
                      /* Remplissage des coeurs */
 
-.coeur_plein {
-    &:hover {
-        cursor: pointer;
-    }
-    &:active {
-        color: transparent;
-        background: radial-gradient(#DA86DF, #9B77D4);
-        -webkit-background-clip: text;
-        opacity: 1;
-        transition: opacity 450ms ease-in-out 150ms;
-    }
-}
-
-.menu_coeur_plein {
+.coeur_plein, .menu_coeur_plein {
     &:hover {
         cursor: pointer;
     }
@@ -138,17 +125,17 @@ button:hover {
 
                 /* Les checks */
 
-.menu_carte:hover .menu_carte_titre {
+.menu_carte:active .menu_carte_titre {
     width: 85%;
     transition: width 500ms ease;
 }
 
-.menu_carte:hover .menu_carte_accompagnement {
+.menu_carte:active .menu_carte_accompagnement {
     width: 100%;
     transition: width 500ms ease;
 }
 
-.menu_carte:hover .circle {
+.menu_carte:active .circle {
     width: 17%;
     animation: check_ok 0.5s ease-in-out forwards;
     & i {
@@ -185,7 +172,39 @@ figure:hover {
                         /* Pour les desktop*/
 
 @media (min-width: 992px) {
+    .menu_coeur_plein, .coeur_plein {
+        &:hover {
+            color: transparent;
+            background: radial-gradient(#DA86DF, #9B77D4);
+            -webkit-background-clip: text;
+            opacity: 1;
+            transition: opacity 450ms ease-in-out 150ms;
+        }
+    }
+
+    .menu_carte:active .circle {
+        width: 17%;
+    }
+
+    .menu_carte:hover .menu_carte_titre {
+        width: 85%;
+        transition: width 500ms ease;
+    }
+    
+    .menu_carte:hover .menu_carte_accompagnement {
+        width: 100%;
+        transition: width 500ms ease;
+    }
+    
     .menu_carte:hover .circle {
         width: 17%;
+        animation: check_ok 0.5s ease-in-out forwards;
+        & i {
+            opacity: 1;
+            position: relative;
+            top: 34%;
+            left: 31%;
+            animation: rotation 1.5s ease-in-out forwards;
+        }
     }
 }
