@@ -56,13 +56,13 @@
 .menu_coeur {
     @include position_coeur;
     left: 312px;
-    top: 35px;
+    top: 300px;
 }
 
 .menu_coeur_plein {
     @include position_coeur;
     left: 312px;
-    top: 35px;
+    top: 300px;
     opacity: 0;
 }
 
@@ -195,6 +195,7 @@
 
     .menu_coeur, .menu_coeur_plein {
         font-size: 200%;
+        top: 8.8em;
     }
 
     .menu {

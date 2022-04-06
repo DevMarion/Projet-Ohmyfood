@@ -1,17 +1,17 @@
                                 /* loader spinner*/
 
 .mot_1 {
-    @include animation_def;
+    @include animation_aff;
     animation-delay: 7.106622221506186ms;
 }
                         
 .mot_2 {
-    @include animation_def;
+    @include animation_aff;
     animation-delay: 1028.7948611635468ms;
 }
                 
 .mot_3 {
-    @include animation_def;
+    @include animation_aff;
     animation-delay: 2012.5855190137213ms;
 }
                 
@@ -116,7 +116,7 @@ button:hover {
     }
     &:active {
         color: transparent;
-        background: radial-gradient(#DA86DF, #9B77D4);
+        background: linear-gradient(#DA86DF, #9B77D4);
         -webkit-background-clip: text;
         opacity: 1;
         transition: opacity 450ms ease-in-out 150ms;

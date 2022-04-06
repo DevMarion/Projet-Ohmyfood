@@ -1,6 +1,6 @@
 @keyframes check_ok {
   0% {
-    transform: translateX(57px);
+    transform: translateX(0);
   }
   100% {
     transform: translateX(-57px);
@@ -14,14 +14,12 @@
     transform: rotate(0);
   }
 }
-@keyframes defilement {
+@keyframes affichage {
   0% {
     opacity: 0;
-    transform: translateY(20px);
   }
   100% {
     opacity: 1;
-    transform: translateY(0);
   }
 }
 @keyframes rotation_loader {
@@ -42,9 +40,19 @@
     visibility: hidden;
   }
 }
+@keyframes defilement {
+  0% {
+    opacity: 0;
+    transform: translateY 20px;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY 0;
+  }
+}
 /* loader spinner*/
 .mot_1 {
-  animation-name: defilement;
+  animation-name: affichage;
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
@@ -52,7 +60,7 @@
 }
 
 .mot_2 {
-  animation-name: defilement;
+  animation-name: affichage;
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
@@ -60,7 +68,7 @@
 }
 
 .mot_3 {
-  animation-name: defilement;
+  animation-name: affichage;
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
@@ -206,7 +214,7 @@ button:hover {
 }
 .coeur_plein:active, .menu_coeur_plein:active {
   color: transparent;
-  background: radial-gradient(#DA86DF, #9B77D4);
+  background: linear-gradient(#DA86DF, #9B77D4);
   -webkit-background-clip: text;
   opacity: 1;
   transition: opacity 450ms ease-in-out 150ms;
@@ -857,7 +865,7 @@ figure figcaption {
   top: 20px;
   font-size: 25px;
   left: 312px;
-  top: 35px;
+  top: 300px;
 }
 
 .menu_coeur_plein {
@@ -866,7 +874,7 @@ figure figcaption {
   top: 20px;
   font-size: 25px;
   left: 312px;
-  top: 35px;
+  top: 300px;
   opacity: 0;
 }
 
@@ -993,6 +1001,7 @@ figure figcaption {
 
   .menu_coeur, .menu_coeur_plein {
     font-size: 200%;
+    top: 8.8em;
   }
 
   .menu {
