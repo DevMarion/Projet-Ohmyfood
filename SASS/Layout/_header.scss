@@ -1,7 +1,6 @@
 header {
     display: flex;
     align-items: center;
-    height: 62px;
     & i {
         margin: 30px 66px 30px 28px;
     }
@@ -42,10 +41,6 @@ header a {
                         /* Pour les desktop*/
 
 @media (min-width: 992px) {
-    header {
-        height: 100%;
-    }
-
     .fa-arrow-left:before {
         font-size: 135%;
     }

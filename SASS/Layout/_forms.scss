@@ -4,7 +4,6 @@ form {
 
 .form_recherche {
     @include flexbox;
-    height: 51px;
     box-shadow: inset 1px 3px 0px #e5dfdf;
     background-color: $background-color_plusfonce;
     &_position {
@@ -19,7 +18,6 @@ form {
 
 .form_corps {
     text-align: center;
-    height: 287px;
     &_p {
         margin: 0 28px 33px 39px;
     }
@@ -50,7 +48,6 @@ h1 {
     }
 
     .form_corps {
-        height: 360px;
         &_p {
             margin: 0% 0% 4% 0%;
         }

@@ -323,6 +323,10 @@ a {
 
 /* Pour les desktop*/
 @media (min-width: 992px) {
+  body {
+    font-size: 20px;
+  }
+
   h1 {
     font-size: 175%;
   }
@@ -341,6 +345,7 @@ button {
   padding: 17px 20px 17px 20px;
   box-shadow: 2px 3px 20px #979696;
   cursor: pointer;
+  margin-bottom: 57px;
 }
 
 /* Bouton du menu */
@@ -352,6 +357,7 @@ button {
   padding: 17px 20px 17px 20px;
   box-shadow: 2px 3px 20px #979696;
   cursor: pointer;
+  margin-bottom: 57px;
   padding: 18px 48px 20px 47px;
   margin: 50px 0 83px 82px;
 }
@@ -377,7 +383,6 @@ button {
 header {
   display: flex;
   align-items: center;
-  height: 62px;
 }
 header i {
   margin: 30px 66px 30px 28px;
@@ -414,10 +419,6 @@ header a {
 }
 /* Pour les desktop*/
 @media (min-width: 992px) {
-  header {
-    height: 100%;
-  }
-
   .fa-arrow-left:before {
     font-size: 135%;
   }
@@ -435,7 +436,6 @@ form {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 51px;
   box-shadow: inset 1px 3px 0px #e5dfdf;
   background-color: #eaeaea;
 }
@@ -450,7 +450,6 @@ form {
 
 .form_corps {
   text-align: center;
-  height: 287px;
 }
 .form_corps_p {
   margin: 0 28px 33px 39px;
@@ -477,28 +476,25 @@ h1 {
     height: 72px;
   }
 
-  .form_corps {
-    height: 360px;
-  }
   .form_corps_p {
     margin: 0% 0% 4% 0%;
   }
 }
 footer {
-  height: 200px;
   background-color: #353535;
   color: white;
   padding: 25px 0 0 25px;
-  line-height: 28px;
 }
 footer h4 {
   font-family: "Shrikhand", sans-serif;
   padding: 0 0 6px 0;
 }
-footer .footer_lien {
+footer footer, footer .footer_lien {
   line-height: 28px;
+  padding-bottom: 57px;
 }
-footer .footer_lien_1 a {
+
+.footer_lien_1 a {
   padding-left: 10px;
 }
 
@@ -603,7 +599,6 @@ footer .footer_lien_1 a {
   }
 }
 .fonctionnement {
-  height: 440px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -653,7 +648,6 @@ h2 {
 }
 
 .restaurants {
-  height: 1215px;
   background-color: #f6f6f6;
   padding: 0 20px 50px 20px;
 }
@@ -663,16 +657,19 @@ h2 {
   height: 1058px;
   justify-content: space-around;
 }
+.restaurants a {
+  position: relative;
+}
 
 figure {
   width: 335px;
   height: 250px;
   background-color: white;
   border-radius: 15px;
-  position: relative;
   box-shadow: 2px 3px 20px #dfdfdf;
 }
 figure img {
+  position: relative;
   width: 335px;
   height: 170px;
   border-radius: 15px 15px 0 0;
@@ -682,8 +679,8 @@ figure div {
   background-color: #99E2D0;
   color: #22a884;
   font-weight: bold;
-  top: 8%;
-  left: 77%;
+  top: 11px;
+  left: 243px;
   height: 30px;
   width: 80px;
   padding: 7px 13px 10px 13px;
@@ -718,18 +715,13 @@ figure figcaption {
     align-items: center;
   }
 
-  .restaurants {
-    height: auto;
-  }
-
   .restaurants_cartes {
     flex-wrap: wrap;
     align-content: center;
     height: auto;
   }
-
-  figure {
-    margin-bottom: 7%;
+  .restaurants_cartes a {
+    margin-bottom: 3%;
   }
 }
 /* Pour les tablettes*/
@@ -743,7 +735,6 @@ figure figcaption {
 @media (min-width: 992px) {
   .fonctionnement {
     justify-content: space-evenly;
-    height: auto;
   }
   .fonctionnement_multichoix {
     width: 100%;
@@ -751,7 +742,7 @@ figure figcaption {
     justify-content: space-around;
   }
   .fonctionnement_choix {
-    width: 32%;
+    width: 29%;
     justify-content: flex-start;
   }
 
@@ -759,28 +750,35 @@ figure figcaption {
     margin: 0 0 0 4%;
   }
 
-  .restaurants_cartes a {
-    width: 35%;
-    height: 375px;
-    margin-bottom: 3%;
+  .restaurants_cartes {
+    justify-content: space-around;
   }
 
+  figure {
+    width: 400px;
+    height: 285px;
+  }
+  figure div {
+    top: 6%;
+    left: 68%;
+    height: 14%;
+    width: 28%;
+    font-size: 100%;
+  }
   figure img {
     width: 100%;
     height: 80%;
   }
-
   figure figcaption {
     padding: 1% 0px 0px 2%;
     line-height: 118%;
   }
 
   figcaption h3 {
-    font-size: 98%;
+    font-size: 95%;
   }
-
   figcaption p {
-    font-size: 90%;
+    font-size: 87%;
   }
 
   .coeur, .coeur_plein {

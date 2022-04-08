@@ -1,22 +1,21 @@
 footer {
-    height: 200px;
     background-color: #353535;
     color: white;
     padding: 25px 0 0 25px;
-    line-height: 28px;
     & h4 {
         font-family: 'Shrikhand', sans-serif;
         padding: 0 0 6px 0;
     }
 
-    .footer_lien {
+    footer, .footer_lien {
         line-height: 28px;
+        padding-bottom: 57px;
+}
     }
 
     .footer_lien_1 a {
         padding-left: 10px;
     }
-}
 
                         /* Pour les first mobile*/
 
