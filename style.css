@@ -662,7 +662,6 @@ h2 {
 .restaurants_cartes {
   display: flex;
   flex-direction: column;
-  height: 1058px;
   justify-content: space-around;
 }
 .restaurants a {
@@ -672,6 +671,7 @@ h2 {
 figure {
   width: 335px;
   height: 250px;
+  margin-bottom: 20px;
   background-color: white;
   border-radius: 15px;
   box-shadow: 2px 3px 20px #dfdfdf;
@@ -704,17 +704,17 @@ figure figcaption {
 
 .coeur {
   position: absolute;
-  left: 285px;
-  top: 20px;
   font-size: 25px;
+  top: 19px;
+  left: 267px;
 }
 
 .coeur_plein {
   position: absolute;
-  left: 285px;
-  top: 20px;
   font-size: 25px;
   opacity: 0;
+  top: 19px;
+  left: 267px;
 }
 
 /* Pour les first mobile*/
@@ -726,10 +726,6 @@ figure figcaption {
   .restaurants_cartes {
     flex-wrap: wrap;
     align-content: center;
-    height: auto;
-  }
-  .restaurants_cartes a {
-    margin-bottom: 3%;
   }
 }
 /* Pour les tablettes*/
@@ -829,26 +825,25 @@ figure figcaption {
 .menu {
   background-color: #f6f6f6;
   border-radius: 40px 40px 0 0;
-  height: 1254px;
   padding-right: 13px;
   padding-left: 13px;
 }
+
 .menu_titre {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
+  position: relative;
 }
 .menu_titre h1 {
   font-family: "shrikhand", sans-serif;
   padding: 30px 0 10px 8px;
 }
-.menu h2 {
+
+.menu_page_choix h2 {
   font-size: 18px;
   padding: 40px 0px 23px 7px;
   display: flex;
   flex-direction: column;
 }
-.menu h2::after {
+.menu_page_choix h2::after {
   content: "";
   width: 50px;
   border-bottom: 4px #99E2D0 solid;
@@ -857,26 +852,21 @@ figure figcaption {
 .menu_B {
   background-color: #f6f6f6;
   border-radius: 40px 40px 0 0;
-  height: 1336px;
   padding-left: 13px;
 }
 
 .menu_coeur {
   position: absolute;
-  left: 285px;
-  top: 20px;
   font-size: 25px;
-  left: 312px;
-  top: 300px;
+  left: 296px;
+  top: 32px;
 }
 
 .menu_coeur_plein {
   position: absolute;
-  left: 285px;
-  top: 20px;
   font-size: 25px;
-  left: 312px;
-  top: 300px;
+  left: 296px;
+  top: 32px;
   opacity: 0;
 }
 
@@ -916,6 +906,7 @@ figure figcaption {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  font-size: 15.5px;
 }
 .menu_carte_prix {
   font-weight: bold;
@@ -951,19 +942,15 @@ figure figcaption {
     justify-content: center;
   }
   .menu_titre h1 {
-    font-size: 148%;
+    text-align: center;
   }
 
   .menu_coeur, .menu_coeur_plein {
     left: 84%;
   }
 
-  .menu h2 {
-    align-items: center;
-  }
-
   .menu_carte {
-    width: 100%;
+    width: 77%;
   }
   .menu_carte_titre {
     padding: 0 0 8px 4%;
@@ -976,7 +963,7 @@ figure figcaption {
 /* Pour les tablettes*/
 @media (min-width: 769px) {
   .menu_titre h1 {
-    font-size: 240%;
+    font-size: 170%;
   }
 
   .menu h2 {
@@ -1003,19 +990,18 @@ figure figcaption {
 
   .menu_coeur, .menu_coeur_plein {
     font-size: 200%;
-    top: 8.8em;
   }
 
-  .menu {
-    height: auto;
-  }
   .menu_page {
     display: flex;
     justify-content: space-between;
-    height: 46%;
   }
   .menu_page_choix {
     width: 32%;
+  }
+
+  .menu_titre h1 {
+    font-size: 245%;
   }
 
   .menu h2 {
@@ -1026,15 +1012,10 @@ figure figcaption {
     align-items: center;
     line-height: 141%;
     height: 27%;
-  }
-  .menu_carte_titre h3 {
-    font-size: 100%;
+    width: 100%;
   }
   .menu_carte_legumes {
-    font-size: 85%;
-  }
-  .menu_carte_prix {
-    font-size: 80%;
+    font-size: 97%;
   }
 }
 

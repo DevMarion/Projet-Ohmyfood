@@ -51,7 +51,6 @@ h2 {
     &_cartes {
         display: flex;
         flex-direction: column;
-        height: 1058px;
         justify-content: space-around;
     }
     & a {
@@ -62,6 +61,7 @@ h2 {
 figure {
     width: 335px;
     height: 250px;
+    margin-bottom: 20px;
     background-color: white;
     border-radius: 15px;
     @include box-shadow;
@@ -94,11 +94,15 @@ figure {
 
 .coeur {
     @include position_coeur;
+    top: 19px;
+    left: 267px;
 }
 
 .coeur_plein {
     @include position_coeur;
     opacity: 0;
+    top: 19px;
+    left: 267px;
 }
 
                         /* Pour les first mobile*/
@@ -111,10 +115,6 @@ figure {
     .restaurants_cartes {
         flex-wrap: wrap;
         align-content: center;
-        height: auto;
-        & a {
-            margin-bottom: 3%;
-        }
     }
 }
 

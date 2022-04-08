@@ -21,18 +21,20 @@
 .menu {
     background-color: $background-color_page;
     border-radius: 40px 40px 0 0;
-    height: 1254px;
     padding-right: 13px;
     padding-left: 13px;
-    &_titre {
-        display: flex;
-        align-items: baseline;
-        justify-content: space-between;
-        & h1 {
-            font-family: "shrikhand", sans-serif;
-            padding: 30px 0 10px 8px;
-        }
+}
+
+
+.menu_titre{
+    position: relative;
+    & h1 {
+        font-family: "shrikhand", sans-serif;
+        padding: 30px 0 10px 8px;
     }
+}
+
+.menu_page_choix {
     & h2 {
         font-size: 18px;
         padding: 40px 0px 23px 7px;
@@ -49,20 +51,19 @@
 .menu_B {
     background-color: #f6f6f6;
     border-radius: 40px 40px 0 0;
-    height: 1336px;
     padding-left: 13px;
 }
 
 .menu_coeur {
     @include position_coeur;
-    left: 312px;
-    top: 300px;
+    left: 296px;
+    top: 32px;
 }
 
 .menu_coeur_plein {
     @include position_coeur;
-    left: 312px;
-    top: 300px;
+    left: 296px;
+    top: 32px;
     opacity: 0;
 }
 
@@ -101,6 +102,7 @@
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
+        font-size: 15.5px;
     }
     &_prix {
             font-weight: bold;
@@ -138,7 +140,7 @@
     .menu_titre {
         justify-content: center;
         & h1 {
-            font-size: 148%;
+            text-align: center;
         }
     }
 
@@ -146,12 +148,8 @@
         left: 84%;
     }
 
-    .menu h2 {
-        align-items: center;
-    }
-
     .menu_carte {
-        width: 100%;
+        width: 77%;
         &_titre {
             padding: 0 0 8px 4%;
             width: 100%;
@@ -166,7 +164,7 @@
 
 @media (min-width: 769px) {
     .menu_titre h1 {
-        font-size: 240%;
+        font-size: 170%;
     }
 
     .menu h2 {
@@ -195,19 +193,20 @@
 
     .menu_coeur, .menu_coeur_plein {
         font-size: 200%;
-        top: 8.8em;
     }
 
     .menu {
-        height: auto;
         &_page {
         display: flex;
         justify-content: space-between;
-        height: 46%;
             &_choix {
             width: 32%;
             }
         }
+    }
+
+    .menu_titre h1 {
+        font-size: 245%;
     }
 
     .menu h2 {
@@ -218,14 +217,9 @@
         align-items: center;
         line-height: 141%;
         height: 27%;
-        &_titre h3 {
-            font-size: 100%;
-        }
+        width: 100%;
         &_legumes {
-            font-size: 85%;
-        }
-        &_prix {
-            font-size: 80%;
+            font-size: 97%;
         }
     }
 }
