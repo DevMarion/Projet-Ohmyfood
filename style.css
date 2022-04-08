@@ -484,17 +484,22 @@ footer {
   background-color: #353535;
   color: white;
   padding: 25px 0 0 25px;
+  line-height: 30px;
 }
 footer h4 {
   font-family: "Shrikhand", sans-serif;
   padding: 0 0 6px 0;
 }
 footer footer, footer .footer_lien {
-  line-height: 28px;
   padding-bottom: 57px;
 }
 
-.footer_lien_1 a {
+.footer_lien_1, .footer_lien_2 {
+  display: flex;
+  align-items: center;
+}
+
+.footer_lien_1 a, .footer_lien_2 a {
   padding-left: 10px;
 }
 
@@ -530,8 +535,11 @@ footer footer, footer .footer_lien {
   }
 
   .footer_lien_1, .footer_lien_2 {
-    display: flex;
     align-items: flex-end;
+  }
+
+  .footer_lien_1 p {
+    width: 103%;
   }
 }
 /* les mots */
