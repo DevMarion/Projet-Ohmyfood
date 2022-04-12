@@ -40,16 +40,6 @@
     visibility: hidden;
   }
 }
-@keyframes defilement {
-  0% {
-    opacity: 0;
-    transform: translateY 20px;
-  }
-  100% {
-    opacity: 1;
-    transform: translateY 0;
-  }
-}
 /* loader spinner*/
 .mot_1 {
   animation-name: affichage;
@@ -87,7 +77,7 @@
 
 /* defilement */
 .def {
-  animation-name: defilement;
+  animation-name: affichage;
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
@@ -95,7 +85,7 @@
 }
 
 .def_1 {
-  animation-name: defilement;
+  animation-name: affichage;
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
@@ -103,7 +93,7 @@
 }
 
 .def_2 {
-  animation-name: defilement;
+  animation-name: affichage;
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
@@ -111,7 +101,7 @@
 }
 
 .def_3 {
-  animation-name: defilement;
+  animation-name: affichage;
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
@@ -119,7 +109,7 @@
 }
 
 .def_4 {
-  animation-name: defilement;
+  animation-name: affichage;
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
@@ -127,7 +117,7 @@
 }
 
 .def_5 {
-  animation-name: defilement;
+  animation-name: affichage;
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
@@ -135,7 +125,7 @@
 }
 
 .def_6 {
-  animation-name: defilement;
+  animation-name: affichage;
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
@@ -143,7 +133,7 @@
 }
 
 .def_7 {
-  animation-name: defilement;
+  animation-name: affichage;
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
@@ -151,7 +141,7 @@
 }
 
 .def_8 {
-  animation-name: defilement;
+  animation-name: affichage;
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
@@ -159,7 +149,7 @@
 }
 
 .def_9 {
-  animation-name: defilement;
+  animation-name: affichage;
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
@@ -167,7 +157,7 @@
 }
 
 .def_10 {
-  animation-name: defilement;
+  animation-name: affichage;
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
@@ -175,7 +165,7 @@
 }
 
 .def_11 {
-  animation-name: defilement;
+  animation-name: affichage;
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
@@ -183,7 +173,7 @@
 }
 
 .def_12 {
-  animation-name: defilement;
+  animation-name: affichage;
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
@@ -191,7 +181,7 @@
 }
 
 .def_13 {
-  animation-name: defilement;
+  animation-name: affichage;
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
